@@ -11,3 +11,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: false
+
+mailqueue:
+  worker:
+    threads: 5
+    poll-interval: 1000
+    lock-timeout: 60000
