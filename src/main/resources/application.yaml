@@ -1,3 +1,13 @@
 spring:
   application:
     name: mailqueue
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mailqueue
+    username: mailqueue
+    password: mailqueue
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
